@@ -18,7 +18,7 @@ test('first test', () => {
       description: 'Описание недоступно',
     },
   ];
-  expect(description('Bowman')).toEqual(bowman);
+  expect(description(character)).toEqual(bowman);
 });
 test('second test', () => {
   function pushChar() {
@@ -64,10 +64,44 @@ test('second test', () => {
       description: 'Описание недоступно',
     },
   ];
-  expect(description('Bowman')).toEqual(bowman);
+  expect(description(character)).toEqual(bowman);
 });
-test('wrongChar test', () => {
-  expect(() => {
-    description('Bowmann');
-  }).toThrow('Ошибка');
+test('without_character test', () => {
+  const daemon = {
+    name: 'Демон',
+    type: 'Daemon',
+    health: 500,
+    level: 30,
+    attack: 400,
+    defence: 100,
+    special: [
+      {
+        id: 80,
+        name: 'Адский котёл',
+        icon: 'http://...',
+        description: 'Все сгорят',
+      },
+      {
+        id: 90,
+        name: 'Порча',
+        icon: 'http://...',
+      // <- обратите внимание, описание "засекречено"
+      },
+    ],
+  };
+  const daemonSpecial = [
+    {
+      id: 80,
+      name: 'Адский котёл',
+      icon: 'http://...',
+      description: 'Все сгорят',
+    },
+    {
+      id: 90,
+      name: 'Порча',
+      icon: 'http://...',
+      description: 'Описание недоступно',
+    },
+  ];
+  expect(description(daemon)).toEqual(daemonSpecial);
 });

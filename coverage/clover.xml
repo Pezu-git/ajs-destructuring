@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1614777000564" clover="3.2.0">
-  <project timestamp="1614777000565" name="All files">
-    <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1" elements="13" coveredelements="13" complexity="0" loc="8" ncloc="8" packages="1" files="2" classes="2"/>
+<coverage generated="1614794553356" clover="3.2.0">
+  <project timestamp="1614794553356" name="All files">
+    <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1" elements="9" coveredelements="9" complexity="0" loc="6" ncloc="6" packages="1" files="2" classes="2"/>
     <file name="app.js" path="C:\Users\artem\Desktop\Netology\Продвинутый JS\ajs-destructuring\src\js\app.js">
-      <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <line num="3" count="3" type="stmt"/>
       <line num="5" count="3" type="stmt"/>
-      <line num="6" count="3" type="cond" truecount="2" falsecount="0"/>
-      <line num="8" count="2" type="stmt"/>
-      <line num="10" count="6" type="cond" truecount="2" falsecount="0"/>
-      <line num="11" count="2" type="stmt"/>
-      <line num="14" count="2" type="stmt"/>
-      <line num="16" count="1" type="stmt"/>
+      <line num="7" count="8" type="cond" truecount="2" falsecount="0"/>
+      <line num="8" count="3" type="stmt"/>
+      <line num="11" count="3" type="stmt"/>
     </file>
     <file name="character.js" path="C:\Users\artem\Desktop\Netology\Продвинутый JS\ajs-destructuring\src\js\character.js">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
